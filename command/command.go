@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"bitbucket.org/puumku/discord-gather-bot/gather"
+	"github.com/dubinin/discord-gather-bot/gather"
 	"github.com/bwmarrin/discordgo"
 
 	log "github.com/Sirupsen/logrus"

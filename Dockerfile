@@ -1,8 +1,10 @@
-FROM golang:1.7-wheezy
+FROM golang:latest
 
-ADD . /go/src/bitbucket.org/puumku/discord-gather-bot
+ADD . /go/src/github.com/dubinin/discord-gather-bot
 
-RUN go get github.com/bwmarrin/discordgo && go get github.com/Sirupsen/logrus
+RUN go get github.com/bwmarrin/discordgo
+
+RUN go get github.com/Sirupsen/logrus
 
 RUN go install github.com/dubinin/discord-gather-bot
 
